@@ -4,9 +4,6 @@ const cors = require("cors");
 const db = require("./db");
 const processa = require("./processa.js");
 
-// Heroku
-const cool = require('cool-ascii-faces');
-
 app.use(cors())
 app.use(express.json())
 
@@ -25,9 +22,6 @@ var motorTimer = "0";
 function isNumber(n) {
     return !isNaN(parseFloat(n)) && isFinite(n);
 }
-
-// Heroku
-app.get('/cool', (req, res) => res.send(cool()))
 
 // Pega os tipos de plantas disponiveis
 app.get('/getPlants', (req, res) => {
@@ -95,7 +89,7 @@ app.post('/postData', (req, res) => {
     res.send("Valores incorretos!");
 });
 
-const port = 5000;
+const port = 3001;
 app.listen(port, ()=>{
     console.log("Rodando servidor Express.");
 });
