@@ -1,0 +1,26 @@
+{
+  "Suculentas": {
+    "umidade": "50",
+    "temperatura": "50",
+    "higrometro": "50",
+    "active": false
+  },
+  "Cactos": {
+    "umidade": "40",
+    "temperatura": "40",
+    "higrometro": "40",
+    "active": true
+  },
+  "Cebolinhas": {
+    "umidade": "30",
+    "temperatura": "30",
+    "higrometro": "30",
+    "active": false
+  },
+  "Salsinhas": {
+    "umidade": "20",
+    "temperatura": "20",
+    "higrometro": "20",
+    "active": false
+  }
+}
